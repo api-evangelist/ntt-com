@@ -1,0 +1,239 @@
+aid: ntt-com
+name: NTT
+description: >-
+  NTT (Nippon Telegraph and Telephone Corporation) is a Tokyo-headquartered
+  global technology and telecommunications group with roughly 340,000
+  employees and a 150-year history of innovation. The group operates through
+  five business divisions — Consulting & IT Services, Mobile Solutions,
+  Smart Tech, Consumer & Business, and Research & Development — and is
+  anchored by major subsidiaries including NTT DOCOMO (Japan's largest
+  mobile carrier), NTT Communications / NTT DOCOMO BUSINESS (enterprise
+  cloud, network, and platform services), NTT DATA Group (global IT
+  services and systems integration), NTT Ltd. (managed services), and NTT
+  Research. NTT exposes a substantial developer surface through the NTT
+  DOCOMO BUSINESS Developer Portal at developer.ntt.com, which catalogs
+  enterprise APIs across Network (Arcstar Universal One, Flexible
+  InterConnect, Global M2M), Cloud (Smart Data Platform, Enterprise Cloud
+  2.0), Voice, App (Safety Confirmation, Text & Language Analysis, Speech
+  Recognition), Management (asset visibility, vulnerability), and Core
+  (Authorization, Billing, API Log, Business Process, Service Order,
+  Pay-per-use, Price, Organization, Personal Profile) categories. The
+  group also publishes IoT APIs (Things Cloud) and a docomo Developer
+  support portal at dev.smt.docomo.ne.jp. NTT's primary open source
+  presence is the nttcom GitHub organization, which ships the Enterprise
+  Cloud Python and Go SDKs (eclsdk / eclcloud), the eclcli command-line
+  tool, Terraform providers for Enterprise Cloud 2.0 (terraform-provider-
+  ecl) and Flexible InterConnect (terraform-provider-fic), the ksot
+  network-IaC framework, the pola stateful PCE / PCEP library, the fluvia
+  eBPF/XDP IPFIX exporter, and threatconnectome for SBOM-driven
+  vulnerability management. NTT DATA additionally maintains regional
+  GitHub orgs (NTTDATA, NTTDATA-EMEA, NTTDATA-DACH, NTTDATAInnovation,
+  launchbynttdata, nttdata-oss) covering testing automation, Kubernetes
+  plugins, and LLM observability tooling. NTT also drives the IOWN
+  (Innovative Optical and Wireless Network) initiative, photonics and
+  optical-quantum research, and responsible AI development across its R&D
+  arm.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Telecommunications
+  - Mobile Networks
+  - Enterprise Cloud
+  - Smart Data Platform
+  - IOWN
+  - 5G
+  - IoT
+  - Things Cloud
+  - Network APIs
+  - SD-WAN
+  - Photonics
+  - Japan
+  - Systems Integration
+url: https://raw.githubusercontent.com/api-evangelist/ntt-com/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis:
+  - aid: ntt-com:ntt-communications-developer-portal
+    name: NTT DOCOMO BUSINESS Developer Portal
+    description: >-
+      Unified API gateway for NTT Communications / NTT DOCOMO BUSINESS
+      enterprise services. Catalogs APIs across Network, Cloud, Voice,
+      App, Management, and Core categories — including Arcstar Universal
+      One (traffic, contract, circuit alarm, Flexible-Ethernet, Mobile,
+      Global M2M), Smart Data Platform Network and Cloud, Safety
+      Confirmation, Simultaneous Notification, Service Order, Billing,
+      Pay-per-use, Price, Organization, Personal Profile, Authorization,
+      API Log (v1/v2), and Business Process APIs. The portal documents
+      OpenAPI-described interfaces with request/response schemas and
+      Python and Ruby sample code.
+    humanURL: https://developer.ntt.com/en
+    baseURL: https://api.ntt.com/
+    tags:
+      - Network
+      - Cloud
+      - Voice
+      - IoT
+      - Enterprise
+    properties:
+      - type: Portal
+        url: https://developer.ntt.com/en
+      - type: Documentation
+        url: https://developer.ntt.com/en/api-docs
+      - type: Blog
+        url: https://developer.ntt.com/en/blog
+  - aid: ntt-com:smart-data-platform-cloud
+    name: Smart Data Platform — Enterprise Cloud 2.0
+    description: >-
+      NTT Communications' Enterprise Cloud 2.0 control APIs for
+      provisioning compute, storage, networking, and managed services.
+      Programmatic access is provided via the eclsdk Python SDK, eclcloud
+      Go SDK, the eclcli command-line tool, and the terraform-provider-ecl
+      Terraform provider.
+    humanURL: https://sdpf.ntt.com/services/baremetal-server/
+    tags:
+      - Cloud
+      - Infrastructure
+      - Enterprise Cloud
+    properties:
+      - type: Documentation
+        url: https://sdpf.ntt.com/
+      - type: SDK
+        url: https://github.com/nttcom/eclsdk
+        name: Enterprise Cloud Python SDK
+      - type: SDK
+        url: https://github.com/nttcom/eclcloud
+        name: Enterprise Cloud Go SDK
+      - type: CLI
+        url: https://github.com/nttcom/eclcli
+        name: Enterprise Cloud CLI
+      - type: Terraform
+        url: https://github.com/nttcom/terraform-provider-ecl
+        name: terraform-provider-ecl
+  - aid: ntt-com:smart-data-platform-network
+    name: Smart Data Platform — Flexible InterConnect
+    description: >-
+      Network control APIs for NTT Communications' Flexible InterConnect
+      service, enabling programmatic management of inter-cloud and
+      inter-DC connectivity. Exposed through the terraform-provider-fic
+      Terraform provider and the developer.ntt.com portal.
+    humanURL: https://sdpf.ntt.com/services/fic/
+    tags:
+      - Network
+      - SD-WAN
+      - InterConnect
+    properties:
+      - type: Documentation
+        url: https://sdpf.ntt.com/services/fic/
+      - type: Terraform
+        url: https://github.com/nttcom/terraform-provider-fic
+        name: terraform-provider-fic
+  - aid: ntt-com:things-cloud
+    name: NTT Communications Things Cloud
+    description: >-
+      IoT device-management platform exposing a documented OpenAPI
+      specification for device, measurement, alarm, event, and tenant
+      management. Targets industrial and enterprise IoT deployments.
+    humanURL: https://developer.ntt.com/iot/docs/reference/openapi/
+    tags:
+      - IoT
+      - Device Management
+      - Things Cloud
+    properties:
+      - type: OpenAPI
+        url: https://developer.ntt.com/iot/docs/reference/openapi/
+      - type: Documentation
+        url: https://developer.ntt.com/iot/
+  - aid: ntt-com:arcstar-universal-one
+    name: Arcstar Universal One APIs
+    description: >-
+      Family of APIs for NTT Communications' Arcstar Universal One
+      managed VPN/network service — including traffic and contract info,
+      circuit alarm retrieval, Flexible-Ethernet bandwidth and route
+      control, mobile line operation status (data usage), and Global M2M
+      SIM card control.
+    humanURL: https://developer.ntt.com/en/api-docs
+    tags:
+      - Network
+      - VPN
+      - M2M
+      - Mobile
+    properties:
+      - type: Documentation
+        url: https://developer.ntt.com/en/api-docs
+  - aid: ntt-com:docomo-developer-support
+    name: docomo Developer Support
+    description: >-
+      NTT DOCOMO's developer portal for smartphone-application APIs,
+      launched November 2013. Provides API keys, console, and developer
+      account management for DOCOMO services targeted at mobile-app
+      builders.
+    humanURL: https://dev.smt.docomo.ne.jp/
+    tags:
+      - Mobile
+      - Smartphone
+      - DOCOMO
+    properties:
+      - type: Portal
+        url: https://dev.smt.docomo.ne.jp/
+      - type: Documentation
+        url: https://dev.smt.docomo.ne.jp/?p=about.api
+common:
+  - type: Website
+    url: https://group.ntt/en/
+  - type: Website
+    url: https://www.global.ntt/
+  - type: DeveloperPortal
+    url: https://developer.ntt.com/en
+  - type: DeveloperPortal
+    url: https://dev.smt.docomo.ne.jp/
+  - type: SmartDataPlatform
+    url: https://sdpf.ntt.com/
+  - type: NTTDocomo
+    url: https://www.docomo.ne.jp/english/
+  - type: NTTCommunications
+    url: https://www.ntt.com/en.html
+  - type: NTTDATA
+    url: https://www.nttdata.com/global/en/
+  - type: NTTLtd
+    url: https://services.global.ntt/
+  - type: NTTResearch
+    url: https://ntt-research.com/
+  - type: IOWN
+    url: https://group.ntt/en/newsrelease/iown/
+  - type: GitHubOrganization
+    url: https://github.com/nttcom
+    name: NTT DOCOMO BUSINESS (nttcom)
+  - type: GitHubOrganization
+    url: https://github.com/NTTDATA
+    name: NTT DATA
+  - type: GitHubOrganization
+    url: https://github.com/NTTDATA-EMEA
+    name: NTT DATA EMEA
+  - type: GitHubOrganization
+    url: https://github.com/NTTDATA-DACH
+    name: NTT DATA DACH
+  - type: GitHubOrganization
+    url: https://github.com/NTTDATAInnovation
+    name: NTT DATA Innovation & Technology
+  - type: GitHubOrganization
+    url: https://github.com/launchbynttdata
+    name: Launch by NTT DATA
+  - type: GitHubOrganization
+    url: https://github.com/nttdata-oss
+    name: NTT DATA OSS Professional Team
+  - type: PressReleases
+    url: https://group.ntt/en/newsrelease/
+  - type: Careers
+    url: https://group.ntt/en/careers/
+  - type: Sustainability
+    url: https://group.ntt/en/csr/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ntt/
+  - type: YouTube
+    url: https://www.youtube.com/c/NTTGlobal
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
