@@ -100,10 +100,10 @@ apis:
     properties:
       - type: Documentation
         url: https://sdpf.ntt.com/
-      - type: SDK
+      - type: SDKs
         url: https://github.com/nttcom/eclsdk
         name: Enterprise Cloud Python SDK
-      - type: SDK
+      - type: SDKs
         url: https://github.com/nttcom/eclcloud
         name: Enterprise Cloud Go SDK
       - type: CLI
