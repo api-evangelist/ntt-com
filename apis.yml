@@ -181,6 +181,8 @@ apis:
       - type: Documentation
         url: https://dev.smt.docomo.ne.jp/?p=about.api
 common:
+  - type: DomainSecurity
+    url: security/ntt-com-domain-security.yml
   - type: Website
     url: https://group.ntt/en/
   - type: Website
