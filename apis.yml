@@ -134,6 +134,10 @@ apis:
     tags:
       - Network
       - SD-WAN
+      - Interconnect
+    tags_raw:
+      - Network
+      - SD-WAN
       - InterConnect
     properties:
       - type: Documentation
