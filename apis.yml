@@ -145,7 +145,7 @@ apis:
     tags:
       - Network
       - SD-WAN
-      - Interconnect
+      - InterConnect
     tags_raw:
       - Network
       - SD-WAN
