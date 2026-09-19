@@ -61,6 +61,20 @@ access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ntt-com.png
 tags:
   - Telecommunications
+  - Mobile Network
+  - Enterprise Cloud
+  - Smart Data Platform
+  - IOWN
+  - 5G
+  - IoT
+  - Things Cloud
+  - Network APIs
+  - SD-WAN
+  - Photonics
+  - Japan
+  - Systems Integration
+tags_raw:
+  - Telecommunications
   - Mobile Networks
   - Enterprise Cloud
   - Smart Data Platform
@@ -94,6 +108,12 @@ apis:
     humanURL: https://developer.ntt.com/en
     baseURL: https://api.ntt.com/
     tags:
+      - Networks
+      - Cloud
+      - Voice
+      - IoT
+      - Enterprise
+    tags_raw:
       - Network
       - Cloud
       - Voice
@@ -143,7 +163,7 @@ apis:
       Terraform provider and the developer.ntt.com portal.
     humanURL: https://sdpf.ntt.com/services/fic/
     tags:
-      - Network
+      - Networks
       - SD-WAN
       - Interconnect
     tags_raw:
@@ -182,6 +202,11 @@ apis:
       SIM card control.
     humanURL: https://developer.ntt.com/en/api-docs
     tags:
+      - Networks
+      - VPN
+      - M2M
+      - Mobile
+    tags_raw:
       - Network
       - VPN
       - M2M
