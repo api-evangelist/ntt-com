@@ -2,6 +2,8 @@ generated: '2026-10-21'
 method: searched
 checked:
 - terraform/integrations/terraform-integration-edges.yml
+- https://www.ismap.go.jp/csm?id=cloud_service_list
+- https://www.ismap.go.jp/csm?id=cloud_service_list_liu
 source:
 - terraform/integrations/terraform-integration-edges.yml
 edges:
@@ -25,3 +27,41 @@ edges:
   category: infrastructure-as-code provider registry listing
   badges:
   - Verified publisher (Terraform partner tier)
+- partner_name: ISMAP
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.ismap.go.jp/csm?id=cloud_service_list
+  category: Japan government cloud security assessment (ISMAP)
+  contract_reference:
+    register: ISMAP / ISMAP-LIU cloud service lists (www.ismap.go.jp)
+    standard: ISMAP
+    spec_file: null
+    role: ismap-registered
+    registrations:
+    - register_number: C21-0018-2
+      registration_type: ISMAP
+      service: Smart Data Platform サービス
+      registered_name: ＮＴＴドコモビジネス株式会社
+      service_url: https://sdpf.ntt.com/
+      matched_domain: ntt.com
+      matched_by: domain+local-verified
+      evidence_url: https://www.ismap.go.jp/csm?id=cloud_service_list
+      scope_of_statement: https://www.ismap.go.jp/sys_attachment.do?sys_id=10ca428b8387bed0aa68c6a8beaad3ec
+      hand_verified: ＮＴＴドコモビジネス (NTT DOCOMO BUSINESS, formerly NTT Communications) registers Smart Data Platform
+        on ntt.com; all/ntt-com is developer.ntt.com and carries a Smart Data Platform tag
+    signal_note: certified_products = one entry per ISMAP registration TYPE (ISMAP, ISMAP-LIU), never per service;
+      services are context, never counted. The lists carry current registrations only (a filed renewal keeps a registration
+      valid), so lapsed is always false
+    certified_products:
+    - product: ISMAP
+      standard: ISMAP
+      registration_type: ISMAP
+      lapsed: false
+    detected_by: sweep-japan-ismap-tisax-assessments.py
+    detected: '2026-10-22'
+  detected_by: sweep-japan-ismap-tisax-assessments.py
+  first_seen: '2026-10-22'
