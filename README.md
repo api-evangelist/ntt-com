@@ -1,4 +1,4 @@
-# ntt-com
+# NTT
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-NTT — Nippon Telegraph and Telephone Corporation, NTT DOCOMO, NTT Communications, NTT DATA — Japanese global telco and IT services group.
+NTT (Nippon Telegraph and Telephone Corporation) is a Tokyo-headquartered global technology and telecommunications group with roughly 340,000 employees and a 150-year history of innovation. The group operates through five business divisions — Consulting & IT Services, Mobile Solutions, Smart Tech, Consumer & Business, and Research & Development — and is anchored by major subsidiaries including NTT DOCOMO (Japan's largest mobile carrier), NTT Communications / NTT DOCOMO BUSINESS (enterprise cloud, network, and platform services), NTT DATA Group (global IT services and systems integration), NTT Ltd. (managed services), and NTT Research. NTT exposes a substantial developer surface through the NTT DOCOMO BUSINESS Developer Portal at developer.ntt.com, which catalogs enterprise APIs across Network (Arcstar Universal One, Flexible InterConnect, Global M2M), Cloud (Smart Data Platform, Enterprise Cloud 2.0), Voice, App (Safety Confirmation, Text & Language Analysis, Speech Recognition), Management (asset visibility, vulnerability), and Core (Authorization, Billing, API Log, Business Process, Service Order, Pay-per-use, Price, Organization, Personal Profile) categories. The group also publishes IoT APIs (Things Cloud) and a docomo Developer support portal at dev.smt.docomo.ne.jp. NTT's primary open source presence is the nttcom GitHub organization, which ships the Enterprise Cloud Python and Go SDKs (eclsdk / eclcloud), the eclcli command-line tool, Terraform providers for Enterprise Cloud 2.0 (terraform-provider- ecl) and Flexible InterConnect (terraform-provider-fic), the ksot network-IaC framework, the pola stateful PCE / PCEP library, the fluvia eBPF/XDP IPFIX exporter, and threatconnectome for SBOM-driven vulnerability management. NTT DATA additionally maintains regional GitHub orgs (NTTDATA, NTTDATA-EMEA, NTTDATA-DACH, NTTDATAInnovation, launchbynttdata, nttdata-oss) covering testing automation, Kubernetes plugins, and LLM observability tooling. NTT also drives the IOWN (Innovative Optical and Wireless Network) initiative, photonics and optical-quantum research, and responsible AI development across its R&D arm.
+
+**Areas:** Telecommunications · Mobile Network · Enterprise Cloud · Smart Data Platform · IOWN · 5G · IoT · Things Cloud · Network APIs · SD-WAN · Photonics · Japan
+
+## NTT on APIs.io
+
+Everything profiled for NTT is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ntt-com/](https://apis.io/providers/ntt-com/)** — or go straight to one of the APIs or properties below.
+
+### APIs (6)
+
+- [NTT DOCOMO BUSINESS Developer Portal](https://apis.io/apis/ntt-com/ntt-communications-developer-portal/) — Unified API gateway for NTT Communications / NTT DOCOMO BUSINESS enterprise services. Catalogs APIs across Network, Cloud, Voice, App, Management, and Core…
+- [Smart Data Platform — Enterprise Cloud 2.0](https://apis.io/apis/ntt-com/smart-data-platform-cloud/) — NTT Communications' Enterprise Cloud 2.0 control APIs for provisioning compute, storage, networking, and managed services. Programmatic access is provided…
+- [Smart Data Platform — Flexible InterConnect](https://apis.io/apis/ntt-com/smart-data-platform-network/) — Network control APIs for NTT Communications' Flexible InterConnect service, enabling programmatic management of inter-cloud and inter-DC connectivity.…
+- [NTT Communications Things Cloud](https://apis.io/apis/ntt-com/things-cloud/) — IoT device-management platform exposing a documented OpenAPI specification for device, measurement, alarm, event, and tenant management. Targets industrial…
+- [Arcstar Universal One APIs](https://apis.io/apis/ntt-com/arcstar-universal-one/) — Family of APIs for NTT Communications' Arcstar Universal One managed VPN/network service — including traffic and contract info, circuit alarm retrieval,…
+- [docomo Developer Support](https://apis.io/apis/ntt-com/docomo-developer-support/) — NTT DOCOMO's developer portal for smartphone-application APIs, launched November 2013. Provides API keys, console, and developer account management for…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ntt Com Domain Security](https://apis.io/security/ntt-com/ntt-com-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://group.ntt/en/)
+- [GitHub](https://github.com/nttcom)
+
+## API Evangelist rating
+
+**Kin Score 17.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 63.4 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 0.0 |
+
+**Agent readiness 12.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.0** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ntt-com/](https://apis.io/providers/ntt-com/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for NTT: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ntt-com/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
